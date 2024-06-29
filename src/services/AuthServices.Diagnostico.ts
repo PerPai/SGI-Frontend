@@ -5,7 +5,7 @@ export class AuthServiceDiagnostico {
   static async crearDiagnostico(diagnostico: DiagnosticoModel) {
     try {
       const response = await axios.post(
-        "https://sgi-frontend-production.up.railway.app/api/diagnostico",
+        "https://sgi-production.up.railway.app/api/diagnostico",
         diagnostico
       );
       return response.data;
@@ -21,7 +21,7 @@ export class AuthServiceDiagnostico {
   static async GetDiagnosticos(CT_ID_INCIDENCIA: string) {
     try {
       const response = await axios.get(
-        `https://sgi-frontend-production.up.railway.app/api/diagnostico`, {
+        `https://sgi-production.up.railway.app/api/diagnostico`, {
           params: {
             CT_ID_INCIDENCIA
           }
