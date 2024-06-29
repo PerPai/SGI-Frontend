@@ -44,6 +44,9 @@ const GlobalToolbar: React.FC = () => {
           <IonButton color={"danger"} onClick={() => cambiopestaña(5)} className="button-tool-user">
             Salir
           </IonButton>
+          <IonButton color={"medium"} onClick={() => cambiopestaña(6)} className="button-tool-user">
+          Reportes
+          </IonButton>
         </IonContent>
       </IonMenu>
 

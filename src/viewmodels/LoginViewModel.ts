@@ -91,6 +91,8 @@ export function useLoginViewModel() {
     history.push("/asignar")
    }else if (dato == 4) {
     history.push("/supervision/incidencias")
+   }else if (dato == 6) {
+    history.push("/reportes")
    }else if (dato == 5) {
     history.push("/")
    }
