@@ -1,0 +1,263 @@
+.center-card-incidencia {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  min-height: 105vh; /* Ensure the minimum height covers the viewport */
+  background-color: #186693;
+}
+.center-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+
+}
+
+.incident-jut-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.incident-details {
+  display: flex;
+  flex-direction: column;
+}
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 10vh; /* Ensure the minimum height covers the viewport */
+  height: auto; /* Ensure the minimum height covers the viewport */
+  background-color: #186693;
+}
+
+
+
+.content-wrapper {
+  width: 90%;
+  padding: 10px;
+  max-width: auto;
+  background-color: #ffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.content-wrapper.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+/*modal css*/
+ion-modal#example-modal {
+  --width: fit-content;
+  --min-width: 250px;
+  --height: fit-content;
+  --border-radius: 6px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+}
+
+ion-modal#example-modal h1 {
+  margin: 20px 20px 10px 20px;
+}
+/* Diagnostico.css */
+
+
+/* Nueva clase para el contenedor de incidentes */
+.incident-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 10px;
+  align-items: center;
+}
+
+.incident-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.incident-value {
+  color: #b0b0b0;
+  text-align: left;
+}
+
+/* Estilo para los botones */
+.ion-button {
+  margin-top: 10px;
+}
+
+#botonVer{
+  --background: #2f4531
+}
+#botonclose{
+  --background: #FFAA29
+}
+
+/* Nueva clase para el contenedor de incidentes */
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.modal-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.modal-item span {
+  flex: 1;
+  text-align: right;
+  margin-left: 20px;
+  overflow-wrap: anywhere; /* Ajusta el contenido si es demasiado largo */
+}
+/* Diagnostico.css */
+
+
+ion-modal#example-modal ion-icon {
+  margin-right: 6px;
+
+  width: 48px;
+  height: 48px;
+
+  padding: 4px 0;
+
+  color: #aaaaaa;
+}
+
+ion-modal#example-modal .wrapper {
+  margin-bottom: 10px;
+}
+/*modal css*/
+
+
+
+.content-wrapper.open {
+  max-height: 2000px; /* Ajusta esto según sea necesario */
+  opacity: 1;
+}
+
+.content-wrapper2 {
+  width: 90%;
+  max-width: auto;
+  background-color: #ffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+  background-color: #3880ff;
+  border-radius: 50%;
+}
+
+.file-input {
+  display: none;
+}
+
+.image-preview-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.image-preview {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+
+.incident-priority, .incident-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.view-button {
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  width: 90%;
+  padding: 20px;
+  max-width: 500px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+  background-color: #3880ff;
+  border-radius: 50%;
+}
+
+.file-input {
+  display: none;
+}
+
+.image-preview-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.boton-mas{
+  width: 5%;
+  font-size: medium;
+}
+
+.right-align {
+  text-align: right;
+}
+
+
+
+.ion-label{
+  max-width: 45%;
+}
+
+.image-preview {
+  max-width: 100%;
+  border-radius: 8px;
+}

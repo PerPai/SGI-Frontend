@@ -1,0 +1,70 @@
+.center-card-incidencia {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  min-height: 97.3vh; /* Ensure the minimum height covers the viewport */
+  background-color: #186693;
+  margin-bottom: 15%;
+}
+
+.fondo {
+  background-color: #186693;
+}
+
+.reporte-card {
+  width: 90%;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.reporte-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.reporte-numero {
+  font-weight: bold;
+
+  font-size: 1.2em;
+}
+
+.encolumnado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reporte-categoria,
+.reporte-tecnicos,
+.reporte-horas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 45%; /* Set basis to 45% for two columns layout */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.dato-span span {
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 2px 0;
+}
+
+.reporte-categoria span,
+.reporte-tecnicos span,
+.reporte-horas span {
+  font-weight: bold;
+  color: #000000;
+}
