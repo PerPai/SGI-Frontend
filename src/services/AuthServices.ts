@@ -5,7 +5,7 @@ export class AuthServiceU {
   static async login(user: UserModel) {
     try {
       const response = await axios.post(
-        "https://sgi-production.up.railway.app/api/login",
+        "https://sgi-frontend-production.up.railway.app/api/login",
         user
       );
       console.log(response.data);
@@ -23,7 +23,7 @@ export class AuthServiceU {
   static async GetTecnicos() {
     try {
       const response = await axios.get(
-        "https://sgi-production.up.railway.app/api/users/tecnicos",
+        "https://sgi-frontend-production.up.railway.app/api/users/tecnicos",
       );
       console.log(response.data);
       localStorage.setItem('Tecnicos', JSON.stringify(response.data[0][0]));
@@ -40,7 +40,7 @@ export class AuthServiceU {
   static async GetRoles(CT_CEDULA: string) {
     try {
       const response = await axios.get(
-        `https://sgi-production.up.railway.app/api/rol?CT_CEDULA=${CT_CEDULA}`,
+        `https://sgi-frontend-production.up.railway.app/api/rol?CT_CEDULA=${CT_CEDULA}`,
       );
       console.log(response.data);
       return response.data;

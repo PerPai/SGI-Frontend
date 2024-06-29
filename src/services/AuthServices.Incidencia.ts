@@ -9,7 +9,7 @@ export class AuthServiceIncidencia {
   static async crear(incidencia: IncidenciaModel) {
     try {
       const response = await axios.post(
-        "https://sgi-production.up.railway.app/api/incidencia",
+        "https://sgi-frontend-production.up.railway.app/api/incidencia",
         incidencia
       );
       return response.data;
@@ -26,7 +26,7 @@ export class AuthServiceIncidencia {
   static async asignar(incidencia: IncidenciaModelA, asignador: string) {
     try {
       const response = await axios.post(
-        `https://sgi-production.up.railway.app/api/incidencia/asignar`,
+        `https://sgi-frontend-production.up.railway.app/api/incidencia/asignar`,
         incidencia
       );
       AuthServiceIncidencia.CambioEstado(incidencia.CT_ID_INCIDENCIA, incidencia.CN_ID_ESTADO, asignador);
@@ -38,7 +38,7 @@ export class AuthServiceIncidencia {
   static async bitacora( CT_CEDULA: string, CT_ID_INCIDENCIA: string, CN_AFECTACION: string, CB_REQUIERE_COMPRA: boolean, CN_TIEMPO_ESTIMADO: string, tipo: number) {
     try {
       const response = await axios.post(
-        `https://sgi-production.up.railway.app/api/bitacora`,{
+        `https://sgi-frontend-production.up.railway.app/api/bitacora`,{
           CT_CEDULA, CT_ID_INCIDENCIA, CN_AFECTACION, CB_REQUIERE_COMPRA, CN_TIEMPO_ESTIMADO, tipo
         }
       );
@@ -52,7 +52,7 @@ export class AuthServiceIncidencia {
     console.log(CT_ID_INCIDENCIA, CN_ID_ESTADO, CT_CEDULA);
     try {
       const response = await axios.post(
-        `https://sgi-production.up.railway.app/api/incidencia/cambio?CT_ID_INCIDENCIA=${CT_ID_INCIDENCIA}&CN_ID_ESTADO=${CN_ID_ESTADO}&CT_CEDULA=${CT_CEDULA}`
+        `https://sgi-frontend-production.up.railway.app/api/incidencia/cambio?CT_ID_INCIDENCIA=${CT_ID_INCIDENCIA}&CN_ID_ESTADO=${CN_ID_ESTADO}&CT_CEDULA=${CT_CEDULA}`
       );
       return response.data;
     } catch (error: unknown) {
@@ -62,7 +62,7 @@ export class AuthServiceIncidencia {
 
   static async getAsignado(CT_CEDULA: string) {
     try {
-      const response = await axios.get(`https://sgi-production.up.railway.app/api/asignada`, {
+      const response = await axios.get(`https://sgi-frontend-production.up.railway.app/api/asignada`, {
         params: {
           CT_CEDULA,
         },
@@ -85,7 +85,7 @@ export class AuthServiceIncidencia {
   static async getDataSupervision(CT_ID_INCIDENCIA: string) {
     console.log("entró en getDataSupervision");
     try {
-      const response = await axios.get(`https://sgi-production.up.railway.app/api/supervision/data?CT_ID_INCIDENCIA=${CT_ID_INCIDENCIA}`);
+      const response = await axios.get(`https://sgi-frontend-production.up.railway.app/api/supervision/data?CT_ID_INCIDENCIA=${CT_ID_INCIDENCIA}`);
       console.log(response.data);
       return response.data;
     } catch (error: unknown) {
@@ -104,7 +104,7 @@ export class AuthServiceIncidencia {
   static async getTerminado() {
     try {
       const response = await axios.get(
-        `https://sgi-production.up.railway.app/api/incidencias/terminadas`,
+        `https://sgi-frontend-production.up.railway.app/api/incidencias/terminadas`,
         {}
       );
       return response.data;
@@ -124,7 +124,7 @@ export class AuthServiceIncidencia {
   static async getIncidencias() {
     try {
       const response = await axios.get(
-        `https://sgi-production.up.railway.app/api/incidencias`,
+        `https://sgi-frontend-production.up.railway.app/api/incidencias`,
         {}
       );
       console.log(response.data);

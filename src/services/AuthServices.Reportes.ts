@@ -5,7 +5,7 @@ export class AuthServiceReportes {
   static async GetReportes() {
     try {
       const response = await axios.get(
-        `https://sgi-production.up.railway.app/api/reportes`
+        `https://sgi-frontend-production.up.railway.app/api/reportes`
       );
      
       console.log(response.data);
