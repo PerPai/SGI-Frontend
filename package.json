@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start-backend": "node ./backend/src/app.js",
     "start-frontend": "vite",
     "dev": "npm run start-frontend",
     "build": "tsc && vite build",
